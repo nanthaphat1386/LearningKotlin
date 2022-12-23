@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/colorgold"
+    tools:context=".MainActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="320dp"
+        android:layout_marginTop="75dp"
+        app:cardElevation="35dp"
+        android:outlineAmbientShadowColor="@color/black"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="131dp"
+            android:layout_height="39dp"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/iconsl" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/TopicFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="110dp"
+            android:fontFamily="sans-serif-light"
+            android:text="กรอกเลข HN ผู้ป่วย"
+
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageView" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="@drawable/border"
+            android:layout_marginLeft="25dp"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="155dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_marginTop="197dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/bluebold"
+            android:layout_height="45dp"
+            android:textStyle="bold"
+            style="@style/ButtonSummit"
+            android:text="ยืนยัน"
+            />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
